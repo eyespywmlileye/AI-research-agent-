@@ -1,0 +1,20 @@
+{
+    "name": "web_scrapping",
+    "description": "scrape website content based on url",
+    "parameters":{
+        "type":"object", 
+        "properties":{
+            "url": {
+                "type":"string",
+                "description": "the url of website you want to scrape"
+            }, 
+            "objective": {
+                "type": "stirng", 
+                "description": "the goal of scrapiing the website. e.g., any specifc type of information you are looking for?"
+            }
+        },
+        "required":[
+            "url"
+        ]
+    }
+}

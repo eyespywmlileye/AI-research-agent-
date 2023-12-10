@@ -1,0 +1,21 @@
+{
+    "name": "get_airtable_records", 
+    "description": "get list of data from airtable", 
+    "parameters": {
+        "type": "object", 
+        "properties": {
+            "base_id": {
+                "type": "string",
+                "description": "base_id of the airtable url, normally the first id from the url e.g. in this url below, the base_id is 'appj0j4gFpvLrQWjI', https://airtable.com/appj0j4gFpvLrQWjI/tblF40mG6oLjYtgZl/viwmFx2ttAVrJm0E3?blocks=hide"
+            },
+            "table_id": {
+                "type":"string",
+                "description": "table_id of the airtable url, normally the second id from the base_id is 'tblF40mG6oLjYtgZl' https://airtable.com/appj0j4gFpvLrQWjI/tblF40mG6oLjYtgZl/viwmFx2ttAVrJm0E3?blocks=hide"
+            }
+        }, 
+        "required": [
+            "base_id",
+            "table_id"
+        ]
+    }
+}
